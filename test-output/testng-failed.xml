@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportlistener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Free CRM App Test Cases1(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.hrm1.qa.testcases.HomePageTest">
+        <methods>
+          <include name="clickOnuserTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="verifydashboardNameTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrm1.qa.testcases.HomePageTest -->
+      <class name="com.hrm1.qa.testcases.ProfilePageTest">
+        <methods>
+          <include name="validateCreateNewProfile"/>
+          <include name="verifyvisualEditor"/>
+          <include name="tearDown"/>
+          <include name="verifyuserLabel"/>
+          <include name="setup"/>
+          <include name="verifysyntaxHiglightning"/>
+        </methods>
+      </class> <!-- com.hrm1.qa.testcases.ProfilePageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases1(failed) -->
+  <test thread-count="2" parallel="tests" name="Free CRM App Test Cases2(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.hrm1.qa.testcases.HomePageTest">
+        <methods>
+          <include name="clickOnuserTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="verifydashboardNameTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hrm1.qa.testcases.HomePageTest -->
+      <class name="com.hrm1.qa.testcases.ProfilePageTest">
+        <methods>
+          <include name="validateCreateNewProfile"/>
+          <include name="verifyvisualEditor"/>
+          <include name="tearDown"/>
+          <include name="verifyuserLabel"/>
+          <include name="setup"/>
+          <include name="verifysyntaxHiglightning"/>
+        </methods>
+      </class> <!-- com.hrm1.qa.testcases.ProfilePageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases2(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
